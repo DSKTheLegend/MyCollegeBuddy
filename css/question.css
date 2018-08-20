@@ -1,0 +1,45 @@
+.question_bank{
+	width: 80%;
+	margin: 70px auto 70px auto;
+	text-align: center;
+
+}
+.question_btn{
+	padding: 25px;
+	border: 2px solid white;
+	margin: 10px;
+	float: left;
+	font-size: 17px;
+    background: url("/images/what-the-hex-dark.png") repeat;
+    color: white;
+	
+	
+	
+}
+
+.question_btn:hover{
+	 box-shadow: 0 5px 5px white, 0 0px 5px 10px #ffa200,0 0px 0px 10px black;
+	transform: translateX(2px);
+	transform: translateY(2px);
+	border-color: #333;
+}
+
+.year_box{
+	border: 2px solid black;
+	height: auto;
+	padding: 20px;
+	overflow-y: hidden;
+}
+
+.sem_btn{
+	margin: auto;
+	width: 50%;
+}
+
+.sub_sem{
+	border: 2px solid black;
+}
+#yr{
+	display: inline-block;
+	overflow-y: hidden;
+}

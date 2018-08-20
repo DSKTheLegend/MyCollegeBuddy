@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>My College Buddy | Question Bank</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <meta name="description" content="I am pursuing a degree in Information Technology at KIIT University. I have knowledge in the field of web development and ethical hacking, and I am always looking for new challenges. I am passionate about learning new technology.">	
+        <meta name="keywords" content="Abhishek Raha,Abhishek Raha Resume">
+        <meta name="author" content="Abhishek Raha">
+        <style>
+        @font-face {
+
+                font-family: my_font;
+
+                src: url("RobotoCondensed-Light.ttf"); /* For most other browsers */
+
+            }
+        </style>
+        <!-- Smooth Scroll Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/question.css">
+        <link rel="stylesheet" href="/css/modal.css">
+
+        <!-- JS Files -->
+        <script src="/js/main.js"></script>
+        <script src="/js/question.js"></script>
+        <!-- JS Files -->
+
+
+	
+</head>
+<body>
+    <!-- Display Screen -->
+        <div class="container-fluid row" style="margin: 0; padding: 0;" id="0">
+            <div class="container-fluid nav_bar">
+                <img src="/images/main_logo.png">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#" class="active">Question Bank</a></li>
+                    <li><a href="/contact.php">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-flex content">
+            <br><br>
+            <div class="container parallax plx_main" style="background-image: url('/images/qpp.png'); height: 400px;"></div>
+            
+            <div class="container question_bank">
+			<h1>Previous Year Question Papers</h1>
+			
+			<!-- Academic Year -->
+			<div class="year_box">
+				<div id="yr">
+					<button class="question_btn" onclick="first_year()" id="1yr"> 1st Year </button>
+					<button class="question_btn" onclick="second_year()" id="2yr"> 2nd Year </button>
+					<button class="question_btn" onclick="third_year()" id="3yr"> 3rd Year </button>
+					<button class="question_btn" onclick="fourth_year()" id="4yr"> 4th Year </button>
+				</div>
+				<button class="question_btn" onclick="reset()" style="float: right; padding-left: 50px; padding-right: 50px; display: none;" id="back"> Back </button>
+				<div class="sem_btn">
+					<button class="question_btn" onclick="sem_clicker('1_sub_list')" style="display: none;" id="first_sem"> 1st Semester </button>
+					<button class="question_btn" onclick="sem_clicker('2_sub_list')" style="display: none;" id="second_sem"> 2nd Semester </button>
+					<button class="question_btn" onclick="sem_clicker('3_sub_list')" style="display: none;" id="third_sem"> 3rd Semester </button>
+					<button class="question_btn" onclick="sem_clicker('4_sub_list')" style="display: none;" id="fourth_sem"> 4th Semester </button>
+					<button class="question_btn" onclick="sem_clicker('5_sub_list')" style="display: none;" id="fifth_sem"> 5th Semester </button>
+					<button class="question_btn" onclick="sem_clicker('6_sub_list')" style="display: none;" id="sixth_sem"> 6th Semester </button>
+					<button class="question_btn" style="display: none; cursor: not-allowed; opacity: 0.5;" id="seventh_sem"> 7th Semester </button> <!-- onclick="sem_clicker('7_sub_list')" -->
+					<button class="question_btn" style="display: none; cursor: not-allowed; opacity: 0.5;" id="eighth_sem"> 8th Semester </button> <!-- onclick="sem_clicker('7_sub_list')" -->
+				</div>
+			</div>
+					
+		</div>
+	
+	<!-- Semester Subject List  -->
+					<!-- Sem 1 Subjects -->
+				<div id="1_sub_list" class="modal" style="display: none;">
+					<!-- Modal content -->
+  					<div class="modal-content">
+    					<div class="modal-header">
+      						<span class="close" onclick="close_sem('1_sub_list')">&times;</span>
+      						<h2>First Semester</h2>
+    					</div>
+    					<div class="modal-body">
+      						<button class="question_btn" onclick="get_id('mathematics_q_1')">Mathematics I</button>
+					        <button class="question_btn" onclick="get_id('programming_in_c_q')">Programming In C</button>
+					        <button class="question_btn" onclick="get_id('basic_electronics_q')">Basic Electronics</button>
+					        <button class="question_btn" onclick="get_id('chem1_q')">Chemistry</button>
+					        <button class="question_btn" onclick="get_id('evs1_q')">Environmental Science</button>
+					        <button class="question_btn" onclick="get_id('pc1_q')">Professional Communication</button>
+    					</div>
+    					<div class="modal-footer">
+      						<h3>   </h3>
+    					</div>
+  					</div>
+				</div>
+				<!-- Sem 2 Subjects -->
+				<div id="2_sub_list" class="modal" style="display: none;">
+					<!-- Modal content -->
+  					<div class="modal-content">
+    					<div class="modal-header">
+      						<span class="close" onclick="close_sem('2_sub_list')">&times;</span>
+      						<h2>Second Semester</h2>
+    					</div>
+    					<div class="modal-body">
+					        <button class="question_btn" onclick="get_id('mathematics_q_2')">Mathematics II</button>
+					        <button class="question_btn" onclick="get_id('oops2_q')">Object Oriented Programming</button>
+					        <button class="question_btn" onclick="get_id('bee2_q')">Basic Electrical Engineering</button>
+					        <button class="question_btn" onclick="get_id('phy2_q')">Physics</button>
+					        <button class="question_btn" onclick="get_id('mech2_q')">Engineering Mechanics</button>
+    					</div>
+    					<div class="modal-footer">
+      						<h3>   </h3>
+    					</div>
+  					</div>
+				</div>
+				<!-- Sem 3 Subjects -->
+				<div id="3_sub_list" class="modal" style="display: none;">
+					<!-- Modal content -->
+  					<div class="modal-content">
+    					<div class="modal-header">
+      						<span class="close" onclick="close_sem('3_sub_list')">&times;</span>
+      						<h2>Third Semester</h2>
+    					</div>
+    					<div class="modal-body">
+					        <button class="question_btn" onclick="get_id('mathematics_q_3')">Mathematics III</button>
+					        <button class="question_btn" onclick="get_id('wt3_q')">Web Technology</button>
+					        <button class="question_btn" onclick="get_id('dsa3_q')">Data Structures & Algorithm</button>
+					        <button class="question_btn" onclick="get_id('de3_q')">Digital Electronics</button>
+					        <button class="question_btn" onclick="get_id('dm3_q')">Discrete Mathematics</button>
+    					</div>
+    					<div class="modal-footer">
+      						<h3>   </h3>
+    					</div>
+  					</div>
+				</div>
+				<!-- Sem 4 Subjects -->
+				<div id="4_sub_list" class="modal" style="display: none;">
+					<!-- Modal content -->
+  					<div class="modal-content">
+    					<div class="modal-header">
+      						<span class="close" onclick="close_sem('4_sub_list')">&times;</span>
+      						<h2>Fourth Semester</h2>
+    					</div>
+    					<div class="modal-body">
+					        <button class="question_btn" onclick="get_id('mathematics_q_4')">Mathematics IV</button>
+					        <button class="question_btn" onclick="get_id('coa4_q')">Computer Organization and Architechure</button>
+					        <button class="question_btn" onclick="get_id('daa4_q')">Design and Analysis of Algorithm</button>
+					        <button class="question_btn" onclick="get_id('dbms4_q')">Database Management System</button>
+					        <button class="question_btn" onclick="get_id('pdc4_q')">Principal of Digital Communication</button>
+					        <button class="question_btn" onclick="get_id('eco_q')">Engineering Economics</button>
+    					</div>
+    					<div class="modal-footer">
+      						<h3>   </h3>
+    					</div>
+  					</div>
+				</div>
+				<!-- Sem 5 Subjects -->
+				<div id="5_sub_list" class="modal" style="display: none;">
+					<!-- Modal content -->
+  					<div class="modal-content">
+    					<div class="modal-header">
+      						<span class="close" onclick="close_sem('5_sub_list')">&times;</span>
+      						<h2>Fifth Semester</h2>
+    					</div>
+    					<div class="modal-body">
+					        <button class="question_btn" onclick="get_id('cn')">Computer Networking</button>
+					        <button class="question_btn" onclick="get_id('cs')">Cyber Security</button>
+					        <button class="question_btn" onclick="get_id('erp')">Enterprise Resource Planning</button>
+					        <button class="question_btn" onclick="get_id('fla')">Formal Language Automata</button>
+					        <button class="question_btn" onclick="get_id('os')">Operating System</button>
+					        <button class="question_btn" onclick="get_id('se')">Software Engineering</button>
+    					</div>
+    					<div class="modal-footer">
+      						<h3>   </h3>
+    					</div>
+  					</div>
+				</div>
+				<!-- Sem 6 Subjects -->
+				<div id="6_sub_list" class="modal" style="display: none;">
+					<!-- Modal content -->
+  					<div class="modal-content">
+    					<div class="modal-header">
+      						<span class="close" onclick="close_sem('6_sub_list')">&times;</span>
+      						<h2>Sixth Semester</h2>
+    					</div>
+    					<div class="modal-body">
+					        <button class="question_btn" onclick="get_id('data_analytics_q')">Data Analytics</button>
+					        <button class="question_btn" onclick="get_id('oosd_q')">Object Oriented System Design</button>
+					        <button class="question_btn" onclick="get_id('cd_q')">Compiler Design</button>
+					        <button class="question_btn" onclick="get_id('cg_q')">Computer Graphics</button>
+					        <button class="question_btn" onclick="get_id('hpca6_q')">High Performance Computer Architecture</button>
+					        <button class="question_btn" onclick="get_id('mc6_q')">Mobile Computing</button>
+					        <button class="question_btn" onclick="get_id('eco_q')">Engineering Economics</button>
+    					</div>
+    					<div class="modal-footer">
+      						<h3>   </h3>
+    					</div>
+  					</div>
+				</div>
+				<!-- Sem 7 Subjects -->
+				<div id="7_sub_list" class="modal" style="display: none;">
+					<!-- Modal content -->
+  					<div class="modal-content">
+    					<div class="modal-header">
+      						<span class="close" onclick="close_sem('7_sub_list')">&times;</span>
+      						<h2>Seventh Semester</h2>
+    					</div>
+    					<div class="modal-body">
+      						<button class="question_btn" onclick="get_id('mathematics_q_1')">Mathematics I</button>
+					        <button class="question_btn" onclick="get_id('programming_in_c_q')">Programming In C</button>
+					        <button class="question_btn" onclick="get_id('basic_electronics_q')">Basic Electronics</button>
+					        <button class="question_btn" onclick="get_id('chem1_q')">Chemistry</button>
+					        <button class="question_btn" onclick="get_id('evs1_q')">Environmental Science</button>
+					        <button class="question_btn" onclick="get_id('pc1_q')">Professional Communication</button>
+    					</div>
+    					<div class="modal-footer">
+      						<h3>   </h3>
+    					</div>
+  					</div>
+				</div>
+				<!-- Sem 8 Subjects -->
+				<div id="8_sub_list" class="modal" style="display: none;">
+					<!-- Modal content -->
+  					<div class="modal-content">
+    					<div class="modal-header">
+      						<span class="close" onclick="close_sem('8_sub_list')">&times;</span>
+      						<h2>Eighth Semester</h2>
+    					</div>
+    					<div class="modal-body">
+      						<button class="question_btn" onclick="get_id('mathematics_q_1')">Mathematics I</button>
+					        <button class="question_btn" onclick="get_id('programming_in_c_q')">Programming In C</button>
+					        <button class="question_btn" onclick="get_id('basic_electronics_q')">Basic Electronics</button>
+					        <button class="question_btn" onclick="get_id('chem1_q')">Chemistry</button>
+					        <button class="question_btn" onclick="get_id('evs1_q')">Environmental Science</button>
+					        <button class="question_btn" onclick="get_id('pc1_q')">Professional Communication</button>
+    					</div>
+    					<div class="modal-footer">
+      						<h3>   </h3>
+    					</div>
+  					</div>
+				</div>
+				<!-- Semester Subject List -->
+				<!-- Question Paper Modules-->
+				<!--First year_ques - First Semester-->
+
+				<!-- Mathematics I-->    
+
+<div id="mathematics_q_1" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('mathematics_q_1')">&times;</span>
+
+          <h2>Mathematics 1</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtSG1fNmpXc25GNWc#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Mathematics I-->
+
+
+
+<!-- Professional Communication -->    
+
+<div id="pc1_q" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('pc1_q')">&times;</span>
+
+          <h2>Professional Communication</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtUDVrTWRsSXRIVHM#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Professional Communication -->
+
+
+
+<!-- Programming in C-->    
+
+<div id="programming_in_c_q" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('programming_in_c_q')">&times;</span>
+
+          <h2>Programming in C</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtT2pXdWlfMjZzRmc#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Programming in C-->
+
+
+
+<!-- Basic Electronics-->    
+
+<div id="basic_electronics_q" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('basic_electronics_q')">&times;</span>
+
+          <h2>Basic Electronics</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtcTBQdHBja2ZjcDQ#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Basic Electronics-->
+
+
+
+<!-- Chemistry-->    
+
+<div id="chem1_q" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('chem1_q')">&times;</span>
+
+          <h2>Chemistry</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtLUFtNXFsM2xJd0E#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Chemistry-->
+
+
+
+<!-- Environmental_Science-->    
+
+<div id="evs1_q" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('evs1_q')">&times;</span>
+
+          <h2>Environmental_Science</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtejB3VkN4S3FhVk0#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Environmental Science-->
+
+<!-- First year_ques - Frist Semester -->
+
+
+
+<!--First year_ques - Second Semester-->
+
+<!-- Mathematics II-->    
+
+<div id="mathematics_q_2" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('mathematics_q_2')">&times;</span>
+
+          <h2>Mathematics II</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtZU1TSkpBaEl2TnM#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Mathematics II-->
+
+
+
+<!-- Object Oriented Programming -->    
+
+<div id="oops2_q" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('oops2_q')">&times;</span>
+
+          <h2>Object Oriented Programming</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtcHQtNjRKdVZQa1U#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Object Oriented Programming-->
+
+
+
+<!-- Basic Electrical -->    
+
+<div id="bee2_q" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('bee2_q')">&times;</span>
+
+          <h2>Basic Electrical Engineering</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtYlFjUF9SS1ZIMWc#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Basic Electronics-->
+
+
+
+<!-- Physics -->    
+
+<div id="phy2_q" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('phy2_q')">&times;</span>
+
+          <h2>Physics</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtbWFmSjEwYmdFRnM#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Physics-->
+
+
+
+<!-- Engineering Mechanics -->    
+
+<div id="mech2_q" class="modal">
+
+
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('mech2_q')">&times;</span>
+
+          <h2>Engineering Mechanics</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtbGNPUElnelRYM0E#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Engineering Mechanics-->
+
+<!-- First year_ques - Second Semester -->
+
+
+
+<!-- Mathematics III-->    
+
+<div id="mathematics_q_3" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('mathematics_q_3')">&times;</span>
+
+          <h2>Mathematics III</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtZjRNam51V0pJcTg#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Mathematics III-->
+
+
+
+
+<!-- Web Technology -->    
+
+<div id="wt3_q" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('wt3_q')">&times;</span>
+
+          <h2>Web Technology</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtZHNyMnRuM00weVE#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Web Technology -->
+
+
+
+<!-- Data Structures and Algorithm -->    
+
+<div id="dsa3_q" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('dsa3_q')">&times;</span>
+
+          <h2>Data Structures and Algorithm</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtQW52eVBQR1d1YU0#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Data Structures and Algorithm -->
+
+
+
+<!-- Digital Electronics -->    
+
+<div id="de3_q" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('de3_q')">&times;</span>
+
+          <h2>Digital Electronics</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtUFFXUllFelYzYjA#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Digital Electronics -->
+
+
+
+<!-- Disrete Mathematics -->    
+
+<div id="dm3_q" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('dm3_q')">&times;</span>
+
+          <h2>Disrete Mathematics</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtanVpSEtyVDczdVU#list" width="700" height="300px" frameborder="0"></iframe>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+<!-- Discrete Mathematics -->
+
+<!-- Second year_ques - Fourth Semester -->
+
+
+
+<!--Second year_ques - Fourth Semester-->
+
+<!-- Mathematics IV-->    
+
+<div id="mathematics_q_4" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('mathematics_q_4')">&times;</span>
+
+          <h2>Mathematics IV</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtUjNVQ2hfeEt0cVk#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Mathematics IV-->
+
+<!-- Computer Orgamization and Architechture -->    
+
+<div id="coa4_q" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('coa4_q')">&times;</span>
+
+          <h2>Computer Orgamization and Architechture</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtaHJrdXFOTnYzd3M#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Computer Orgamization and Architechture -->
+
+<!-- Design and Analysis of Algorithm -->    
+
+<div id="daa4_q" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('daa4_q')">&times;</span>
+
+          <h2>Design and Analysis of Algorithm</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtR0lLLUQyTHlrMDQ#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Design and Analysis of Algorithm -->
+
+<!--  Database Management System  -->    
+
+<div id="dbms4_q" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('dbms4_q')">&times;</span>
+
+          <h2>Database Management System</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWtQkVJR1lzaVZZblU#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Database Management System -->
+
+<!-- Principal of Digial Communication -->    
+
+<div id="pdc4_q" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('pdc4_q')">&times;</span>
+
+          <h2>Principal of Digial Communication</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B5RKa9kSGkWteWNvcWVUd2gxbWM#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Principal of Digial Communication -->
+
+<!-- Engineering Economics -->    
+
+<div id="eco_q" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('eco_q')">&times;</span>
+
+          <h2>Engineering Economics</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0Bx0G_SWFEFOlT2RhUWtNaUtOcnc#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Engineering Economics -->
+
+<!-- Second year_ques - Fourth Semester -->
+
+<div id="cn" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('cn')">&times;</span>
+
+          <h2>Computer Networks</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B9NVfzldKTWgMV9VTHhBWDFXaE0#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+<div id="cs" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('cs')">&times;</span>
+
+          <h2>Cyber Security</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B9NVfzldKTWgVzE2NkQ0WXoyT2M#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+<div id="erp" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('erp')">&times;</span>
+
+          <h2>Enterprise Resource Planning</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B9NVfzldKTWgcXBCemY5TE9lRWM#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+<div id="fla" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('fla')">&times;</span>
+
+          <h2>Formal Language Automata</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B9NVfzldKTWgeE9QTVdVbGd0ekk#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+<div id="os" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('os')">&times;</span>
+
+          <h2>Operating System</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B9NVfzldKTWgRjEzZDdtZjNVd3M#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+<div id="se" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('se')">&times;</span>
+
+          <h2>Operating System</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B9NVfzldKTWgcllmakdxcFF2RXM#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Third year_ques - Sixth Semester -->
+
+<!-- Data Analytics -->    
+
+<div id="data_analytics_q" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('data_analytics_q')">&times;</span>
+
+          <h2>Data Analytics</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B9NVfzldKTWgN0VTcTk3NnJoTTg#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Data Analytics -->  
+
+<!-- Object Oriented System Design -->    
+
+<div id="oosd_q" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('oosd_q')">&times;</span>
+
+          <h2>Object Oriented System Design</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B9NVfzldKTWgaGctVWtldDhZQlk#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Object Oriented System Design -->  
+
+<!-- Compiler Design -->    
+
+<div id="cd_q" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('cd_q')">&times;</span>
+
+          <h2>Compiler Design</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B9NVfzldKTWgX3pMQWJhYW1IOU0#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Compiler Design -->  
+
+<!-- Computer Graphics -->    
+
+<div id="cg_q" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('cg_q')">&times;</span>
+
+          <h2>Computer Graphics</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B9NVfzldKTWgV0M3ZjBYZ2syQkE#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Computer Graphics -->  
+
+<!-- High Performance Computer Architechture -->    
+
+<div id="hpca6_q" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('hpca6_q');">&times;</span>
+
+          <h2>High Performance Computer Architechture</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B9NVfzldKTWgWTZHeDRnWl9DLTg#list" width="700" height="300px" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- High Performance Computer Architechture -->  
+
+<!-- Mobile Computing -->    
+
+<div id="mc6_q" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('mc6_q');">&times;</span>
+
+          <h2>Mobile Computing</h2>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://drive.google.com/embeddedfolderview?id=0B9NVfzldKTWgU0gxdmg5dnhBbnM#list" width="700" height="300px" frameborder="0"></iframe>
+        </div>
+        <div class="modal-footer" class="contri" class="contri">
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+  </div>
+</div>
+<!-- Mobile Computing -->  
+<!-- Third year_ques - Sixth Semester -->
+
+
+<div id="contri_list" class="modal">
+
+
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <span class="close" onclick="close_sem('contri_list')">&times;</span>
+
+          <h2>Coontribution List</h2>
+
+        </div>
+
+        <div class="modal-body">
+
+          <ul id="myUL">
+            <li><a href="">Admin</a></li>
+            <li><a href="">Abhishek Raha</li>
+            
+          </ul>
+
+          
+
+        </div>
+
+        <div class="modal-footer" class="contri" class="contri">
+
+          <h3  class="contri"><a style="text-decoration:none; color:#333;" href="contribute.php" target="_blank" title="Contribute us your notes so that we can give them to the others out there">Contribute Us</a></h3 >
+
+    </div>
+
+  </div>
+
+
+
+</div>
+            <div class="container" id="footer">
+                <center><p>&copy All Rights Reserved<br>Powered By <b title="TheLegend" >[D$k] Corporation</b> - Abhishek Raha</p></center>
+            </div>
+        </div>
+        
+</body>
+</body>
+</html>

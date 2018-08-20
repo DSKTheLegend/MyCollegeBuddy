@@ -1,0 +1,88 @@
+/* Full Body Styling */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: my_font;
+}
+
+/* Editing container-fluid Default Properties*/
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Right Side of the Screen Styling */
+.nav_bar{
+    background: url("/images/what-the-hex-dark.png") repeat;
+    padding: 1% 3% 2% 3%;
+    display: flex;
+    box-shadow: 0px 5px 10px black;
+    position: fixed;
+    z-index: 100;
+}
+.nav_bar img{
+    margin-left: 5%;
+    
+}
+.nav_bar ul{
+    list-style: none;
+    margin: auto;
+    
+}
+.nav_bar ul li{
+    float: left;
+}
+.nav_bar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    font-weight: bold;
+    border-bottom: 3px solid whitesmoke;
+}
+
+.nav_bar ul li a:hover{
+    border-bottom: 3px dashed whitesmoke;
+}
+.nav_bar ul li a:active{
+    border-bottom: 3px solid red;
+}
+
+.content{
+    background: url("/images/what-the-hex.png") repeat;
+    
+    
+}
+/* Parallax */
+.parallax{
+  height: 500px;
+	width: 95%;
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:auto;
+	margin: auto;
+    height: 500px;
+    margin-top: 8%;
+    box-shadow: 0 5px 5px black, 0 0px 5px 10px white,0 0px 0px 10px black;
+
+}
+
+#abt{
+    height: 400px;
+    margin-top: 5%;
+}
+#footer{
+    background: url("/images/footer_lodyas.png") repeat;
+    padding: 10px 0;
+    color: white;
+    box-shadow: 0 5px 5px black, 0 0px 5px 10px #ffa200,0 0px 0px 10px black;
+    
+    
+}
+
+.active{
+    box-shadow: 0 5px 5px black, 0 0px 5px 10px #ffa200,0 0px 0px 10px white;
+    
+}
