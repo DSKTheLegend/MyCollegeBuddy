@@ -60,7 +60,7 @@
 
 .modal-header {
     padding: 10px 16px;
-    background: url("./images/connectwork.png") repeat;
+    background: url("../images/connectwork.png") repeat;
     color: white;
     box-shadow: 0px 0px 10px black;
     min-height: 50px;
